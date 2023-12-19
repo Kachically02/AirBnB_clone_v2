@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""script that generates a .tgz archive from the contents of the web_static
-folder of your AirBnB Clone repo, using the function do_pack.
+"""scr_ipt that gen_erates a .tgz ar_chive from the cont_ents of the web_static
+fol_der of your AirBnB Clone repo, using the func__tion do_pack.
 """
 from datetime import datetime
 from fabric.api import local
@@ -8,17 +8,17 @@ import os
 
 
 def do_pack():
-    """ generates a .tgz archive from the contents of the web_static
+    """ gene__rates a .tgz arc_hive from the con_tents of the web_static
 
     All files in the folder web_static must be added to the final archive.
-    All archives must be stored in the folder versions.
+    All arc_hives must be sto_red in the folder versions.
     The name of the archive created must be:
         web_static_<year><month><day><hour><minute><second>.tgz
-    The function do_pack must return the archive path if the archive has
-    been correctly generated. Otherwise, it should return None.
+    The function do_pack must return the archive path if the arc_hive has
+    been correctly gen_erated. Otherwise, it shou_ld return N_one.
 
     Returns:
-        fabric.operations._AttributeString: archive path.
+        fabric.oper_ations._AttributeString: arch_ive path.
     """
     now = datetime.now().strftime("%Y%m%d%H%M%S")
 
