@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Test delete feature
+""" Test de_lete fea_ture
 """
 from models.engine.file_storage import FileStorage
 from models.state import State
