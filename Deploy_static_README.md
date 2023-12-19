@@ -1,13 +1,6 @@
 # Project Name.
 **0x03. AirBnB clone - Deploy static**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
-
 ##  Requirements
 
 *   Allowed editors: `vi`, `vim`, `emacs`.
@@ -328,8 +321,3 @@ $ pip3 install Fabric3==1.14.post1
 
 * **5. Puppet for setup** - Redo the task #0 but by using Puppet: `101-setup_web_static.pp`.
 
----
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com
