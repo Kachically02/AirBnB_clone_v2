@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-script (based on the file 2-do_deploy_web_static.py) that creates and
-distributes an archive to web servers
+script (based on the file 2-do_deploy_web_static.py) that cre_ates and
+distributes an arch_ive to web ser_ers
 """
 import os.path
 from fabric.api import *
@@ -14,16 +14,7 @@ env.user = "ubuntu"
 
 
 def deploy():
-    """creates and distributes an archive to your web servers
-
-    All remote commands must be executed on both of web your servers (using
-    env.hosts = ['<IP web-01>', 'IP web-02'] variable in your script).
-    You must use this script to deploy it on your servers: xx-web-01 and
-    xx-web-02.
-
-    Returns:
-        _type_: value of do_deploy
-    """
+  
     # Call the do_pack() function and store the path of the created archive
     archive_path = do_pack()
     if archive_path is None:
@@ -36,18 +27,6 @@ def deploy():
 
 
 def do_pack():
-    """ generates a .tgz archive from the contents of the web_static
-
-    All files in the folder web_static must be added to the final archive.
-    All archives must be stored in the folder versions.
-    The name of the archive created must be:
-        web_static_<year><month><day><hour><minute><second>.tgz
-    The function do_pack must return the archive path if the archive has
-    been correctly generated. Otherwise, it should return None.
-
-    Returns:
-        fabric.operations._AttributeString: archive path.
-    """
     if not os.path.isdir("versions"):
         os.mkdir("versions")
     cur_time = datetime.now()
