@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-script based on the file 1-pack_web_static.py that distributes archive to
-webservers
-"""
+
 import os.path
 from fabric.api import *
 from fabric.operations import run, put
@@ -14,18 +11,6 @@ env.user = "ubuntu"
 
 
 def do_pack():
-    """ generates a .tgz archive from the contents of the web_static
-
-    All files in the folder web_static must be added to the final archive.
-    All archives must be stored in the folder versions.
-    The name of the archive created must be:
-        web_static_<year><month><day><hour><minute><second>.tgz
-    The function do_pack must return the archive path if the archive has
-    been correctly generated. Otherwise, it should return None.
-
-    Returns:
-        fabric.operations._AttributeString: archive path.
-    """
     now = datetime.now().strftime("%Y%m%d%H%M%S")
 
     # create folder versions if it doesn’t exist
