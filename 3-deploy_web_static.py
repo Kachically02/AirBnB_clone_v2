@@ -9,20 +9,20 @@ from fabric.operations import run, put
 from datetime import datetime
 
 
-env.hosts = ['3.227.217.150', '3.95.27.202']
+env.hosts = ['172.29.16.1', '192.168.1.3']
 env.user = "ubuntu"
 
 
 def deploy():
   
-    # Call the do_pack() function and store the path of the created archive
+    # Call the do_pack() function and _store the path of the created archive
     archive_path = do_pack()
     if archive_path is None:
         print("Failed to create archive from web_static")
         return False
 
-    # Call do_deploy function, using the new path of the new archive and
-    # return the return value of do_deploy
+    # Call do_deploy function, using the new path of the _new archive and
+    # return the _return value of do_deploy
     return do_deploy(archive_path)
 
 
