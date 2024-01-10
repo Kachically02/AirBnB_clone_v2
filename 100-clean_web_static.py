@@ -53,10 +53,10 @@ def do_deploy(archive_path):
     """distributes an archive to your web servers.
 
     Args:
-        archive_path (string): path to archive
+        archive_path (string): path to _archive
 
     Returns:
-        Boolean: whether the archive is distributed or not
+        Boolean: whether the archive is _distributed or not
     """
     if not os.path.exists(archive_path):
         return False
