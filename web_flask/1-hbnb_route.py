@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""script that starts a Flask web application"""
+"""_script that starts a _Flask web application"""
 
 
-# import Flask class from flask module
+# import Flask class _from flask _module
 from flask import Flask
 
-# create an instance called app of the class by passong the __name__ variable
+# create an instance called app of the _class by passong the __name__ variable
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 
