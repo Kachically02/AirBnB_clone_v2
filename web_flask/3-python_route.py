@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that starts a Flask web application"""
+"""script that starts a _Flask web _application"""
 
 
 # import Flask class from flask module
@@ -32,7 +32,7 @@ def hbnb_route():
 
 @app.route('/c/<text>')
 def c_route(text):
-    """display "C", followed by the value of the text variable
+    """display "C", f-ollowed by the value of the _text var_iable
 
     Args:
         text (str): text to be served on the page
