@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""script that starts a Flask web application"""
+"""script that starts a _Flask web _application"""
 
 
-# import Flask class from flask module
-# import render_template for rendering templates to browser
+# import Flask class from _flask module
+# import render_template for rendering templates to _browser
 from flask import Flask, render_template
 
 # create an instance called app of the class by passong the __name__ variable
@@ -33,13 +33,13 @@ def hbnb_route():
 
 @app.route('/c/<text>')
 def c_route(text):
-    """display "C", followed by the value of the text variable
+    """display "C", followed by the va_lue of the te_xt var_iable
 
     Args:
-        text (str): text to be served on the page
+        text (str): text to be serv_ed on the pa_ge
 
     Returns:
-        str: text on the page
+        str: text on the pa_ge
     """
     return 'C {}'.format(text.replace('_', ' '))
 
@@ -53,7 +53,7 @@ def python_route(text):
         text (str): text to be served on the page
 
     Returns:
-        str: text on the page
+        str: text on the pa-ge
     """
     return 'Python {}'.format(text.replace('_', ' '))
 
@@ -63,7 +63,7 @@ def number_route(n):
     """display "n is a number" only if n is an integer
 
     Args:
-        n (integer): number to be displayed on page
+        n (integer): number to be displayed on pa-ge
 
     Returns:
         str: text on the page
