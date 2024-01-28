@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""script that starts a Flask web application"""
+"""script that starts a _Flask web a_pplication"""
 
 
-# import Flask class from flask module
+# import Flask class from f_lask module
 # import render_template for rendering templates to browser
 # fetch data from storage engine
 from flask import Flask, render_template
@@ -24,7 +24,7 @@ def teardown_db(exception=None):
 
 @app.route('/states_list')
 def states_list(n=None):
-    """displays a HTML page: inside the tag BODY"""
+    """di_splays a HT_ML page: inside the t-ag BODY"""
     states = storage.all('State')
     return render_template('7-states_list.html', states=states)
 
