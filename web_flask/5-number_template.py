@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""script that starts a Flask web application"""
+"""script that starts a -Flask web application"""
 
 
-# import Flask class from flask module
+# import Flask c-lass from flask module
 # import render_template for rendering templates to browser
 from flask import Flask, render_template
 
@@ -33,10 +33,10 @@ def hbnb_route():
 
 @app.route('/c/<text>')
 def c_route(text):
-    """display "C", followed by the value of the text variable
+    """display "C", _followed by the value of the _text variable
 
     Args:
-        text (str): text to be served on the page
+        text (str): text to be -served on the page
 
     Returns:
         str: text on the page
@@ -47,13 +47,13 @@ def c_route(text):
 @app.route('/python', defaults={'text': 'is cool'})
 @app.route('/python/<text>')
 def python_route(text):
-    """display "Python", followed by the value of the text variable
+    """display "Python", followed by the v-alue of the text variable
 
     Args:
         text (str): text to be served on the page
 
     Returns:
-        str: text on the page
+        str: text on -the page
     """
     return 'Python {}'.format(text.replace('_', ' '))
 
@@ -63,22 +63,22 @@ def number_route(n):
     """display "n is a number" only if n is an integer
 
     Args:
-        n (integer): number to be displayed on page
+        n (integer): number to be -displayed on page
 
     Returns:
-        str: text on the page
+        str: text on the -page
     """
     return '{} is a number'.format(n)
 
 
 @app.route('/number_template/<int:n>')
 def number_template_route(n):
-    """display a HTML page only if n is an integer
+    """display a HTML page o-nly if n is an in-teger
 
-    H1 tag: "Number: n" inside the tag BODY
+    H1 tag: "Number: n" in-side the tag BODY
 
     Args:
-        n (integer): number to be displayed on page
+        n (integer): number to be dis-played on page
 
     Returns:
         str: text on the page
