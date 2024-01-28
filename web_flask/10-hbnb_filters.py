@@ -4,7 +4,7 @@
 
 # import Flask class from flask module
 # import render_template for rendering templates to browser
-# fetch data from storage engine
+# fetch data from st_orage engine
 from flask import Flask, render_template
 
 from models import storage
